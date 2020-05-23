@@ -95,7 +95,7 @@ public class principal extends javax.swing.JPanel {
                             .addComponent(jTextFieldsegundoValor, javax.swing.GroupLayout.PREFERRED_SIZE, 166, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addComponent(jTextFieldprimerValor, javax.swing.GroupLayout.PREFERRED_SIZE, 166, javax.swing.GroupLayout.PREFERRED_SIZE)))
                     .addGroup(jPanel3Layout.createSequentialGroup()
-                        .addGap(48, 48, 48)
+                        .addGap(49, 49, 49)
                         .addComponent(jButtoncalcular)))
                 .addContainerGap(13, Short.MAX_VALUE))
         );
