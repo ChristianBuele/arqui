@@ -47,18 +47,38 @@ public class principal extends javax.swing.JPanel {
 
         jTabbedPane1.setFont(new java.awt.Font("Rockwell", 1, 18)); // NOI18N
 
-        jPanel1.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
-
         jLabel1.setFont(new java.awt.Font("Rockwell", 1, 36)); // NOI18N
         jLabel1.setText("Facultad de Ingenieria");
-        jPanel1.add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(180, 120, -1, -1));
 
         jLabel2.setFont(new java.awt.Font("Rockwell", 1, 48)); // NOI18N
         jLabel2.setText("Universidad de Cuenca");
-        jPanel1.add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(110, 40, -1, -1));
 
         jLabel3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/vista/b477e5cd0a495c8835bf29418b925a9e.jpg"))); // NOI18N
-        jPanel1.add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(200, 190, -1, -1));
+
+        javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
+        jPanel1.setLayout(jPanel1Layout);
+        jPanel1Layout.setHorizontalGroup(
+            jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanel1Layout.createSequentialGroup()
+                .addGap(110, 110, 110)
+                .addComponent(jLabel2))
+            .addGroup(jPanel1Layout.createSequentialGroup()
+                .addGap(180, 180, 180)
+                .addComponent(jLabel1))
+            .addGroup(jPanel1Layout.createSequentialGroup()
+                .addGap(200, 200, 200)
+                .addComponent(jLabel3))
+        );
+        jPanel1Layout.setVerticalGroup(
+            jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanel1Layout.createSequentialGroup()
+                .addGap(40, 40, 40)
+                .addComponent(jLabel2)
+                .addGap(23, 23, 23)
+                .addComponent(jLabel1)
+                .addGap(27, 27, 27)
+                .addComponent(jLabel3))
+        );
 
         jTabbedPane1.addTab("Inicio", jPanel1);
 
@@ -117,7 +137,17 @@ public class principal extends javax.swing.JPanel {
 
         jPanel2.add(jPanel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 200, 560));
 
-        jPanelpeque.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+        javax.swing.GroupLayout jPanelpequeLayout = new javax.swing.GroupLayout(jPanelpeque);
+        jPanelpeque.setLayout(jPanelpequeLayout);
+        jPanelpequeLayout.setHorizontalGroup(
+            jPanelpequeLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 560, Short.MAX_VALUE)
+        );
+        jPanelpequeLayout.setVerticalGroup(
+            jPanelpequeLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 140, Short.MAX_VALUE)
+        );
+
         jPanel2.add(jPanelpeque, new org.netbeans.lib.awtextra.AbsoluteConstraints(200, 0, 560, 140));
 
         jTableDatos.setModel(new javax.swing.table.DefaultTableModel(
@@ -154,7 +184,7 @@ public class principal extends javax.swing.JPanel {
     public javax.swing.JPanel jPanelpeque;
     private javax.swing.JScrollPane jScrollPane1;
     private javax.swing.JTabbedPane jTabbedPane1;
-    private javax.swing.JTable jTableDatos;
+    public javax.swing.JTable jTableDatos;
     public javax.swing.JTextField jTextFieldprimerValor;
     public javax.swing.JTextField jTextFieldsegundoValor;
     // End of variables declaration//GEN-END:variables
