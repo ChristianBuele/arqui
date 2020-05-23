@@ -9,7 +9,7 @@ import Modelo.OperacionesBinarios;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import javax.swing.table.DefaultTableModel;
-import vista.principal;
+import vista.principal1;
 
 /**
  *
@@ -22,9 +22,9 @@ public class controlador implements ActionListener{
     private int[] M=new int[8];
     private String salida="";
     private DefaultTableModel tablaDatos;
-    private principal view;
+    private principal1 view;
     
-    public controlador(principal view,OperacionesBinarios model){
+    public controlador(principal1 view,OperacionesBinarios model){
         this.model=model;
         this.view=view;
     }
@@ -35,8 +35,8 @@ public class controlador implements ActionListener{
         
     }
       public void iniciar(){
-        
-        
+        view.setTitle("Arquitectura y Organización del Computador");
+        view.setLocationRelativeTo(null);
     }
     @Override
     public void actionPerformed(ActionEvent ae) {
