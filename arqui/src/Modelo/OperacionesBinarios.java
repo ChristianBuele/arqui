@@ -9,6 +9,6 @@ package Modelo;
  *
  * @author chris
  */
-public class Modelo {
+public class OperacionesBinarios {
     
 }
