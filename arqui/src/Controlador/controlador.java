@@ -27,7 +27,7 @@ public class controlador implements ActionListener{
     }
      public void inicarTabla(){
         String data[][]={};
-        String col[]={"#Inventario","Indentificación","Fecha Garantía","Departamento"};
+        String col[]={"Operación","A","Q","Q'","M"};
         tablaDatos= new DefaultTableModel(data,col);
         
     }

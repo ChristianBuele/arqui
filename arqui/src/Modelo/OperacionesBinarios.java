@@ -67,10 +67,10 @@ return "";
             for(i=0;i< 8;i++){
                 arr[i]=1-arr[i]; //invierto los digitos
             }
-            add(arr,c);
+            complemento2(arr,c);
         }
     }
-    public static void add(int a[],int b[]) {
+    public static void complemento2(int a[],int b[]) {
         int x,i,c=0;
         for(i=7;i>=0;i--) {
             x=a[i];

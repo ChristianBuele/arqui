@@ -41,7 +41,7 @@ public class principal extends javax.swing.JPanel {
         jButtoncalcular = new javax.swing.JButton();
         jPanelpeque = new javax.swing.JPanel();
         jScrollPane1 = new javax.swing.JScrollPane();
-        jTable1 = new javax.swing.JTable();
+        jTableDatos = new javax.swing.JTable();
 
         setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
@@ -97,7 +97,7 @@ public class principal extends javax.swing.JPanel {
                     .addGroup(jPanel3Layout.createSequentialGroup()
                         .addGap(48, 48, 48)
                         .addComponent(jButtoncalcular)))
-                .addContainerGap(13, Short.MAX_VALUE))
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         jPanel3Layout.setVerticalGroup(
             jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -120,18 +120,18 @@ public class principal extends javax.swing.JPanel {
         jPanelpeque.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
         jPanel2.add(jPanelpeque, new org.netbeans.lib.awtextra.AbsoluteConstraints(200, 0, 560, 140));
 
-        jTable1.setModel(new javax.swing.table.DefaultTableModel(
+        jTableDatos.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
-                {null, null, null, null},
-                {null, null, null, null},
-                {null, null, null, null},
-                {null, null, null, null}
+                {},
+                {},
+                {},
+                {}
             },
             new String [] {
-                "Title 1", "Title 2", "Title 3", "Title 4"
+
             }
         ));
-        jScrollPane1.setViewportView(jTable1);
+        jScrollPane1.setViewportView(jTableDatos);
 
         jPanel2.add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(200, 140, 560, 410));
 
@@ -154,7 +154,7 @@ public class principal extends javax.swing.JPanel {
     public javax.swing.JPanel jPanelpeque;
     private javax.swing.JScrollPane jScrollPane1;
     private javax.swing.JTabbedPane jTabbedPane1;
-    public javax.swing.JTable jTable1;
+    private javax.swing.JTable jTableDatos;
     public javax.swing.JTextField jTextFieldprimerValor;
     public javax.swing.JTextField jTextFieldsegundoValor;
     // End of variables declaration//GEN-END:variables
