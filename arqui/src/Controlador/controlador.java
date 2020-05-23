@@ -9,6 +9,7 @@ import Modelo.OperacionesBinarios;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import javax.swing.table.DefaultTableModel;
+import vista.principal;
 
 /**
  *
@@ -21,14 +22,20 @@ public class controlador implements ActionListener{
     private int[] M=new int[8];
     private String salida="";
     private DefaultTableModel tablaDatos;
+    private principal view;
     
-    public controlador(OperacionesBinarios model){
+    public controlador(principal view,OperacionesBinarios model){
         this.model=model;
+        this.view=view;
     }
      public void inicarTabla(){
         String data[][]={};
         String col[]={"Operación","A","Q","Q'","M"};
         tablaDatos= new DefaultTableModel(data,col);
+        
+    }
+      public void iniciar(){
+        
         
     }
     @Override
